@@ -1,5 +1,5 @@
 module "service" {
-  source = "/home/francisco/Documentos/github-repos/ECS/ecs-service-modulo"
+  source = "/home/francisco/Documentos/Repos-github/ECS/ecs-service-module"
 
   region                      = var.region
   cluster_name                = var.cluster_name
