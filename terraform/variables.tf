@@ -147,3 +147,14 @@ variable "scale_in_evaluation_periods" {
 variable "scale_in_cooldown" {
   type = number
 }
+
+variable "scale_tracking_cpu" {
+  type = string
+}
+
+variable "ssm_alb" {
+  type    = string
+  default = ""
+}
+
+variable "scale_tracking_requests" {}

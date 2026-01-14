@@ -48,6 +48,9 @@ module "service" {
   scale_in_evaluation_periods  = var.scale_in_evaluation_periods
   scale_in_cooldown            = var.scale_in_cooldown
 
-
+  # Autoscaling CPU Tracking
+  scale_tracking_cpu      = var.scale_tracking_cpu
+  alb_arn                 = data.aws_ssm_parameter.alb.value
+  scale_tracking_requests = var.scale_tracking_requests
 }
 
